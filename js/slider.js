@@ -9,8 +9,12 @@ function showSlide(index) {
     } else {
         currentSlide = index;
     }
+
     slides.forEach((slide, i) => {
-        slide.style.display = i === currentSlide ? 'block' : 'none';
+        slide.classList.remove('active');
+        if (i === currentSlide) {
+            slide.classList.add('active');
+        }
     });
 }
 
@@ -19,6 +23,15 @@ function changeSlide(step) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    showSlide(currentSlide);
-    setInterval(() => changeSlide(1), 5000); // Auto-slide every 5 seconds
+    const slides = document.querySelectorAll('.slide');
+
+    // Add 'active' class to the first slide with a delay to trigger animation
+    if (slides.length > 0) {
+        setTimeout(() => {
+            slides[0].classList.add('active');
+        }, 100); // Small delay to ensure DOM rendering
+    }
+
+    // Start auto-slide
+    setInterval(() => changeSlide(1), 7000); // Auto-slide every 5 seconds
 });

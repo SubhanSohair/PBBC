@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Executives Section */
+.executives-section {
+    background-color: #003366; /* Dark blue background */
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.executives-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.executives-section p {
+    font-size: 16px;
+    color: #d9e3f0; /* Lighter blue for text */
+    margin-bottom: 30px;
+}
+
+/* Card Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Spread cards evenly */
+    gap: 20px; /* Spacing between cards */
+}
+
+/* Executive Card */
+.executive-card {
+    position: relative;
+    width: 250px; /* Square dimensions */
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.executive-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.executive-card:hover img {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Faded Overlay */
+.executive-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* Light faded overlay */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.executive-card:hover .overlay {
+    opacity: 0; /* Hide overlay on hover */
+}
+
+/* Text on Overlay */
+.executive-card .text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.executive-card .text h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(48, 48, 48);
+}
+
+.executive-card .text p {
+    font-size: 14px;
+    margin: 0;
+}
