@@ -1,0 +1,37 @@
+/* Footer Section */
+.footer-section {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333; /* Black for Quick Links and Gallery Headings */
+}
+
+.footer-section a {
+    color: #6c757d; /* Grey color */
+    font-weight: 600; /* Bold text */
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.footer-section img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-section img:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    border: 0.5px solid #ddd;
+}
