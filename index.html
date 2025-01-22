@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/about_section.css">
     <link rel="stylesheet" href="/css/executive.css">
     <link rel="stylesheet" href="/css/members.css">
+    <link rel="stylesheet" href="/css/benefits.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <script src="/js/slider.js"></script>
@@ -59,33 +60,33 @@
     </header>
 
     <!-- Slider Section -->
-    <div class="slider-container">
-        <div class="slider">
-            <div class="slide active">
+    <div class="custom-slider-container">
+        <div class="custom-slider">
+            <div class="custom-slide active">
                 <img src="/images/p1.jpg" alt="Background Image">
                 <div class="text-overlay">
                     <h1>PAKISTAN BRITAIN BUSINESS COUNCIL</h1>
                 </div>
             </div>
-            <div class="slide">
+            <div class="custom-slide">
                 <img src="/images/p2.jpeg" alt="Background Image">
                 <div class="text-overlay">
                     <h1>WELCOME</h1>
                 </div>
             </div>
-            <div class="slide">
+            <div class="custom-slide">
                 <img src="/images/p3.jpg" alt="Background Image">
                 <div class="text-overlay">
                     <h1>BUILDING STRONGER BRIDGES</h1>
                 </div>
             </div>
-            <div class="slide">
+            <div class="custom-slide">
                 <img src="/images/p4.jpg" alt="Background Image">
                 <div class="text-overlay">
                     <h1>JOIN US</h1>
                 </div>
             </div>
-            <div class="slide">
+            <div class="custom-slide">
                 <img src="/images/p5.jpg" alt="Background Image">
                 <div class="text-overlay">
                     <h1>PAKISTAN BRITAIN BUSINESS COUNCIL</h1>
@@ -93,9 +94,9 @@
             </div>
         </div>
         <!-- Navigation Arrows -->
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>    
+        <a class="prev" onclick="changeCustomSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeCustomSlide(1)">&#10095;</a>
+    </div>
 
     <!-- About Section -->
     <section class="about-section">
@@ -152,7 +153,7 @@
                 <!-- Executive 3 -->
                 <div class="col-md-3 col-sm-6">
                     <div class="executive-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/Julian-Hamilton-Barns-e1715400624341.jpg" alt="Rashid Iqbal Khan">
+                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/Rashid-sb-e1715400498857.jpg" alt="Rashid Iqbal Khan">
                         <div class="overlay purple-overlay"></div>
                         <div class="text">
                             <h5>Rashid Iqbal Khan</h5>
@@ -271,7 +272,112 @@
     </section>
 
 
-
+    <section class="benefits-section py-5">
+        <div class="container">
+            <h2 class="text-center benefits-heading mb-5">Benefits</h2>
+            <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-4">
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-users fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Meetings with the British High Commission in Pakistan
+                                </p>
+                            </div>
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-landmark fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Meetings with the Pakistan High Commission at varying levels
+                                </p>
+                            </div>
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" alt="Pakistan Flag" style="width: 20px; height: auto;">
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Access to Pakistan Government Officers in Pakistan
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-4">
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-briefcase fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Access to business networking events and forums
+                                </p>
+                            </div>
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-chart-line fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Opportunities to exhibit or showcase goods and services
+                                </p>
+                            </div>
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-handshake fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    B2B meetings with visiting business delegates
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-4">
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-globe fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Opportunities to participate in trade missions
+                                </p>
+                            </div>
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-cogs fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Advisory support for small and medium enterprises
+                                </p>
+                            </div>
+                            <div class="benefit-card text-center shadow-sm">
+                                <div class="icon mb-3">
+                                    <i class="fas fa-bullhorn fa-1x text-primary"></i>
+                                </div>
+                                <p class="text-muted fw-bold">
+                                    Invitations to speak at industry forums
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+            
     <!-- Footer Section -->
     <footer class="footer-section bg-light py-5">
         <div class="container ">

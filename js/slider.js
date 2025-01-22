@@ -1,29 +1,29 @@
-let currentSlide = 0;
+let currentCustomSlide = 0;
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.slide');
+function showCustomSlide(index) {
+    const slides = document.querySelectorAll('.custom-slide');
     if (index >= slides.length) {
-        currentSlide = 0;
+        currentCustomSlide = 0;
     } else if (index < 0) {
-        currentSlide = slides.length - 1;
+        currentCustomSlide = slides.length - 1;
     } else {
-        currentSlide = index;
+        currentCustomSlide = index;
     }
 
     slides.forEach((slide, i) => {
         slide.classList.remove('active');
-        if (i === currentSlide) {
+        if (i === currentCustomSlide) {
             slide.classList.add('active');
         }
     });
 }
 
-function changeSlide(step) {
-    showSlide(currentSlide + step);
+function changeCustomSlide(step) {
+    showCustomSlide(currentCustomSlide + step);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.custom-slide');
 
     // Add 'active' class to the first slide with a delay to trigger animation
     if (slides.length > 0) {
@@ -33,5 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Start auto-slide
-    setInterval(() => changeSlide(1), 7000); // Auto-slide every 5 seconds
+    setInterval(() => changeCustomSlide(1), 7000); // Auto-slide every 5 seconds
 });
