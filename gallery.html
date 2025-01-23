@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Tabs</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Tab container styling */
+        .nav-tabs {
+            justify-content: center;
+            border-bottom: none; /* Remove default underline */
+        }
+
+        /* Tab button styling */
+        .nav-tabs .nav-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2a5fb7; /* Text color for inactive tabs */
+            background-color: #f9f9f9; /* Light background for inactive tabs */
+            border: 1px solid #dcdcdc; /* Border around tabs */
+            border-radius: 5px; /* Rounded corners */
+            margin-right: 5px; /* Spacing between tabs */
+            padding: 8px 15px;
+            text-transform: uppercase;
+        }
+
+        /* Hover state */
+        .nav-tabs .nav-link:hover {
+            color: #fff;
+            background-color: #2a5fb7; /* Blue hover effect */
+            border-color: #2a5fb7;
+        }
+
+        /* Active tab styling */
+        .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #2a5fb7; /* Blue background for active tab */
+            border-color: #2a5fb7;
+        }
+
+        /* Tab content styling */
+        .tab-content {
+            padding: 20px;
+            border: 1px solid #dcdcdc; /* Border around content */
+            border-top: none; /* Merge with active tab */
+            border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+            background-color: #fff; /* White background */
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }   
+        .bg-custom {
+            background-color: #1c4295;
+        }
+    </style>
+</head>
+<body style="background-color: #fcfcfc;">
+
+
+    <!-- Header Section -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>📞 Hotline +44 (0)203 304 6806</span>
+                <span>✉️ <a href="mailto:info@pbbc.uk.com">info@pbbc.uk.com</a></span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="/images/PBBC.webp" alt="PBBC Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery.html">MEDIA GALLERY</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">MEMBERSHIP</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="search-login">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="login"><i class="fas fa-user"></i> Login</a>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <div class="container-fluid  py-5 bg-custom text-white text-center mb-4">
+        <h2 class="fw-bold">Gallery</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Gallery</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container my-5 bg-white h-5 ">
+        <ul class="nav nav-tabs" id="styledTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pbbc-bett-tab" data-bs-toggle="tab" data-bs-target="#pbbc-bett" type="button" role="tab" aria-controls="pbbc-bett" aria-selected="false">PBBC at BETT</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="trade-delegation-tab" data-bs-toggle="tab" data-bs-target="#trade-delegation" type="button" role="tab" aria-controls="trade-delegation" aria-selected="false">Trade Delegation by PBBC</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sialkot-chamber-tab" data-bs-toggle="tab" data-bs-target="#sialkot-chamber" type="button" role="tab" aria-controls="sialkot-chamber" aria-selected="false">Sialkot Chamber Visit to UK</button>
+            </li>
+        </ul>
+    </div>
+    <div class="container" >
+        <div class="tab-content mt-4" id="styledTabsContent">
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="gallery">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    
+                </div>
+
+              
+            </div>
+            <div class="tab-pane fade" id="pbbc-bett" role="tabpanel" aria-labelledby="pbbc-bett-tab">
+                <div class="gallery">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="trade-delegation" role="tabpanel" aria-labelledby="trade-delegation-tab">
+                <div class="gallery">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_716bce5227d54f9187d82b14486589acmv2-scaled.jpg" alt="">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="sialkot-chamber" role="tabpanel" aria-labelledby="sialkot-chamber-tab">
+                <p>Sialkot Chamber Visit to UK content goes here.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-light py-5">
+        <div class="container ">
+            <div class="row align-items-start">
+                <!-- Logo and Social Media -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/04/PBBC-6-ade4f2687c.png" alt="PBBC Logo" class="img-fluid mb-3" style="max-width: 180px;">
+                    <p class="footer-text">
+                        Stay updated on the latest news, events, and insights from PBBC by following us on social media:
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark fs-5"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark fs-5"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="text-dark fs-5"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-dark fs-5"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold text-dark mb-4">Quick Links</h5>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><a href="#" class="text-secondary fw-bold text-decoration-none">FPCCI</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary fw-bold text-decoration-none">BOI</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary fw-bold text-decoration-none">TDAP</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary fw-bold text-decoration-none">PHC London</a></li>
+                        <li><a href="#" class="text-secondary fw-bold text-decoration-none">PBIT</a></li>
+                    </ul>
+                </div>
+                <!-- Gallery -->
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="fw-bold text-dark mb-4">Latest from Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_3a6f3f6c0a63489592dcc245c2f9a682mv2-150x150.jpg" alt="Gallery Image" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_79f9569cbeca489896beeab2404f6ee2mv2-150x150.jpg" alt="Gallery Image" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_567a9b1cd0084414a7085bcbf18db1afmv2-150x150.jpg" alt="Gallery Image" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_d3630d4f36d1490794e1339ae312e19dmv2-150x150.jpg" alt="Gallery Image" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_9eb010dd3d4142beab374b2f8e0515femv2-1-150x150.jpg" alt="Gallery Image" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_26b7df16634344a4a778c6efe83467a3mv2-150x150.jpg" alt="Gallery Image" class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 ">
+            <div class="text-center text-muted mb-5">
+                © 2024 PBBC. All Rights Reserved. Designed and developed by PWS LLC.
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
