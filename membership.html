@@ -1,26 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PBBC</title>
+    <title>Membership</title>
 
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/slider.css">
-    <link rel="stylesheet" href="/css/about_section.css">
-    <link rel="stylesheet" href="/css/executive.css">
-    <link rel="stylesheet" href="/css/members.css">
     <link rel="stylesheet" href="/css/benefits.css">
     <link rel="stylesheet" href="/css/footer.css">
 
-    <script src="/js/slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+
+    <style>
+        .benefits-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .benefits-section h2 {
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        .benefit-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 10px 17px;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card p {
+            color: #201616;
+            font-size: 19px;
+            line-height: 1.6;
+            margin-top: 19px;
+        }
+
+        .slick-prev,
+        .slick-next {
+            color: #6c757d;
+            font-size: 24px;
+        }
+
+        .slick-prev:hover,
+        .slick-next:hover {
+            color: #003366;
+        }
+
+        .membership-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .membership-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .membership-card h4 {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .membership-card p {
+            font-size: 16px;
+            color: #000000;
+            margin: 26px 20px;
+        }
+
+        .membership-card .price {
+            font-weight: bold;
+            font-size: 24px;
+            margin: 14px 0;
+        }
+
+        .membership-card .discounted {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .btn-custom {
+            width: 69%;
+            color: black;
+            padding: 9px 10px;
+            margin-top: 11px;
+            background-color: #dbdddf;
+            border-radius: 0px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-custom:hover {
+            background-color: #b0b2b4;
+
+        }
+
+        .separator {
+            width: 100%;
+            height: 15px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 10" preserveAspectRatio="none"><path d="M0,5 Q3,10 6,5 T12,5 T18,5 T24,5 T30,5 T36,5 T42,5 T48,5 T54,5 T60,5 T66,5 T72,5 T78,5 T84,5 T90,5 T96,5 T102,5 T108,5 T114,5 T120,5" fill="none" stroke="gray" stroke-width="1.5"/></svg>') repeat-x;
+            margin: 20px 0;
+        }
+
+        .headins {
+            color: #1c4295;
+        }
+        .bg-custom {
+            background-color: #1c4295;
+        }
+    </style>
 </head>
+
 <body>
 
     <!-- Header Section -->
@@ -60,218 +178,78 @@
             </div>
         </nav>
     </header>
-
-    <!-- Slider Section -->
-    <div class="custom-slider-container">
-        <div class="custom-slider">
-            <div class="custom-slide active">
-                <img src="/images/p1.jpg" alt="Background Image">
-                <div class="text-overlay animate-text">
-                    <h1>PAKISTAN BRITAIN BUSINESS COUNCIL</h1>
-                </div>
-            </div>
-            <div class="custom-slide">
-                <img src="/images/p2.jpeg" alt="Background Image">
-                <div class="text-overlay animate-text">
-                    <h1>WELCOME</h1>
-                </div>
-            </div>
-            <div class="custom-slide">
-                <img src="/images/p3.jpg" alt="Background Image">
-                <div class="text-overlay animate-text">
-                    <h1>BUILDING STRONGER BRIDGES</h1>
-                </div>
-            </div>
-            <div class="custom-slide">
-                <img src="/images/p4.jpg" alt="Background Image">
-                <div class="text-overlay animate-text">
-                    <h1>JOIN US</h1>
-                </div>
-            </div>
-            <div class="custom-slide">
-                <img src="/images/p5.jpg" alt="Background Image">
-                <div class="text-overlay animate-text">
-                    <h1>PAKISTAN BRITAIN BUSINESS COUNCIL</h1>
-                </div>
-            </div>
-        </div>
-        <!-- Navigation Arrows -->
-        <a class="prev" onclick="changeCustomSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeCustomSlide(1)">&#10095;</a>
-    </div>
     
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="about-container">
-            <!-- Left Image -->
-            <div class="about-image">
-                <img src="/images/about.jpeg" alt="About Image">
-                <div class="image-overlay">
-                    <img src="/images/logo-overlay.jpg" alt="PBBC Logo" class="overlay-logo">
-                </div>
-            </div>
-            <!-- Right Text -->
-            <div class="about-content">
-                <h2 class="section-title">About PBBC</h2>
-                <p class="section-description">
-                    The Pakistan Britain Business Council (PBBC) has a broad mandate to foster and develop bilateral trade between Pakistan and the United Kingdom. As an intermediary, PBBC facilitates connections among businesses, entrepreneurs, professional advisers, and government agencies in Britain, Pakistan, and other jurisdictions to promote mutual trade opportunities.
-                </p>
-                <p class="section-description">
-                    PBBC is committed to hosting trade events and networking opportunities across the UK and Pakistan. It also aims to organise regular trade missions to Pakistan with a specific industry focus, highlighting Pakistan as a secure and attractive destination for business.
-                </p>
-                <a href="#" class="learn-more-btn">Learn More</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Executive Section -->
-    <section class="executives-section">
-        <div class="container">
-            <h2>Executives</h2>
-            <p>PBBC gathered the brightest minds in the world.</p>
-            <div class="row g-4">
-                <!-- Executive 1 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="executive-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/04/COMSATS-e1715399619983.jpg" alt="Dr. Nafees Zakaria">
-                        <div class="overlay blue-overlay"></div>
-                        <div class="text">
-                            <h5>Dr. Nafees Zakaria</h5>
-                            <p>Chairman Advisory Board</p>
-                        </div>
-                    </div>
+    
+    <div class="container-fluid  py-5 bg-custom text-white text-center mb-4">
+        <h2 class="fw-bold">Membership</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Membership</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <section class="container text-center my-5">
+        <!-- OUR JOURNEY Title -->
+        <div class="text-center mb-5">
+            <h1 class="headins fw-bold text-custom">Become A Member</h1>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="membership-card">
+                    <img src="http://pbbc.uk.com/wp-content/uploads/2024/05/Member-Badges-06-08-uai-516x265_edited_p.png"
+                        alt="">
+                    <p>PPBBC is committed to encouraging and supporting small and medium-sized enterprises as they are a
+                        significant contributor to the wider economy. Our SME programme offers tailored support and
+                        advice for small and medium size businesses with our forums and events. PBBC is a focused
+                        advisory platform enabling SME companies to consider trade and investment in Pakistan and to
+                        share practical advice and support.</p>
+                    <div class="price">£20.85 Monthly</div>
+                    <button class="btn-custom">Subscribe to Monthly Plan</button>
+                    <div class="separator"></div>
+                    <div class="price"><span class="discounted">£250.00</span> £125.00 Yearly</div>
+                    <button class="btn-custom">Subscribe to Yearly Plan</button>
                 </div>
-                <!-- Executive 2 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="executive-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/Julian-Hamilton-Barns-e1715400624341.jpg" alt="Julian Hamilton Barns">
-                        <div class="overlay yellow-overlay"></div>
-                        <div class="text">
-                            <h5>Julian Hamilton Barns</h5>
-                            <p>Senior Adviser</p>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="membership-card">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/86a767_6389b47940394ce795b5507038597afamv2.png"
+                        alt="">
+                    <p>PPBBC is committed to encouraging and supporting small and medium-sized enterprises as they are a
+                        significant contributor to the wider economy. Our SME programme offers tailored support and
+                        advice for small and medium size businesses with our forums and events. PBBC is a focused
+                        advisory platform enabling SME companies to consider trade and investment in Pakistan and to
+                        share practical advice and support.</p>
+                    <div class="price">£20.85 Monthly</div>
+                    <button class="btn-custom">Subscribe to Monthly Plan</button>
+                    <div class="separator"></div>
+                    <div class="price"><span class="discounted">£250.00</span> £125.00 Yearly</div>
+                    <button class="btn-custom">Subscribe to Yearly Plan</button>
                 </div>
-                <!-- Executive 3 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="executive-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/Rashid-sb-e1715400498857.jpg" alt="Rashid Iqbal Khan">
-                        <div class="overlay purple-overlay"></div>
-                        <div class="text">
-                            <h5>Rashid Iqbal Khan</h5>
-                            <p>CEO</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Executive 4 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="executive-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/johntucknott-e1715400387832.jpg" alt="John Tucknott CMG MBE">
-                        <div class="overlay green-overlay"></div>
-                        <div class="text">
-                            <h5>John Tucknott CMG MBE</h5>
-                            <p>Chairman</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="membership-card">
+                    <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/86a767_87c8daafd32c4a5e81aecc7d45754f16mv2.png"
+                        alt="">
+                    <p>PPBBC is committed to encouraging and supporting small and medium-sized enterprises as they are a
+                        significant contributor to the wider economy. Our SME programme offers tailored support and
+                        advice for small and medium size businesses with our forums and events. PBBC is a focused
+                        advisory platform enabling SME companies to consider trade and investment in Pakistan and to
+                        share practical advice and support.</p>
+                    <div class="price">£20.85 Monthly</div>
+                    <button class="btn-custom">Subscribe to Monthly Plan</button>
+                    <div class="separator"></div>
+                    <div class="price"><span class="discounted">£250.00</span> £125.00 Yearly</div>
+                    <button class="btn-custom">Subscribe to Yearly Plan</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Members Section -->
-    <section class="members-section">
-        <div class="container">
-            <h2>Our Members</h2>
-            <p class="text-muted">PBBC is proud to have some of the most reputable organizations as its members.</p>
-            <div class="row g-4">
-                <!-- Member 1 -->
-                <div class="col-md-2 offset-md-1 col-sm-4 col-6">
-                    <div class="member-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/designco-client-lagan.png" alt="Lagan Construction Group">
-                    </div>
-                </div>
-                <!-- Member 2 -->
-                <div class="col-md-2 col-sm-4 col-6">
-                    <div class="member-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/04/JCB_company-Logo.wine_-1536x1024.png" alt="JCB">
-                    </div>
-                </div>
-                <!-- Member 3 -->
-                <div class="col-md-2 col-sm-4 col-6">
-                    <div class="member-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/04/86a767_6f2bc48280e44fad92c73912b0a0ba3cmv2.png" alt="London Chamber">
-                    </div>
-                </div>
-                <!-- Member 4 -->
-                <div class="col-md-2 col-sm-4 col-6">
-                    <div class="member-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/Standard_Chartered_2021.svg-1024x402.png" alt="Standard Chartered">
-                    </div>
-                </div>
-                <!-- Member 5 -->
-                <div class="col-md-2 col-sm-4 col-6">
-                    <div class="member-card">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/howard_kennedy.png" alt="Howard Kennedy">
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn btn-primary btn-lg mt-4">View More</a>
-        </div>
-    </section>
-
-    <!-- Membership Section -->
-    <section class="membership-section py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-5">Become A Member</h2>
-            <div class="row g-4 justify-content-center">
-                <!-- Corporate Member -->
-                <div class="col-md-3">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/Member-Badges-06-08-uai-516x265_edited_p.png" class="card-img-top p-3" alt="Corporate Member">
-                        <div class="card-body">
-                            <p class="card-text text-bold">
-                                For larger businesses being Corporate Members enjoy privileged access to high profile events, meetings with senior government ministers (both UK and Pakistan), participation in high level official trade missions, enhanced support and also networking receptions.
-                                Additional benefits: Access to PBBC platform with an invitation to speak at events and forums. Opportunities for sponsoring PBBC events, exhibitions and participation in official visits.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-transparent text-center">
-                            <a href="#" class="btn btn-outline-primary">Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Medium Member -->
-                <div class="col-md-3">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/86a767_6389b47940394ce795b5507038597afamv2.png" class="card-img-top p-3" alt="Medium Member">
-                        <div class="card-body">
-                            <p class="card-text text-bold">
-                                PBBC facilitates members to develop explore, grow and enhance their trade and businesses both in Britain and Pakistan. Members benefit from B2B meetings, forums, business networking events, with a prospect of interacting with visiting business and official delegates.
-                                Furthermore PBBC introduces and provides opportunities to businesses to exhibit or showcase their goods and services.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-transparent text-center">
-                            <a href="#" class="btn btn-outline-primary">Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- SME Member -->
-                <div class="col-md-3">
-                    <div class="card h-100 shadow-sm">
-                        <img src="https://pbbc.uk.com/wp-content/uploads/2024/05/86a767_87c8daafd32c4a5e81aecc7d45754f16mv2.png" class="card-img-top p-3" alt="SME Member">
-                        <div class="card-body">
-                            <p class="card-text text-bold">
-                                PBBC is committed to encouraging and supporting small and medium-sized enterprises as they are a significant contributor to the wider economy. Our SME programme offers tailored support and advice for small and medium size businesses with our forums and events.
-                                PBBC is a focused advisory platform enabling SME companies to consider trade and investment in Pakistan and to share practical advice and support.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-transparent text-center">
-                            <a href="#" class="btn btn-outline-primary">Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Benefits Section -->
     <section class="benefits-section py-5">
@@ -379,7 +357,7 @@
             </div>
         </div>
     </section>
-            
+    
     <!-- Footer Section -->
     <footer class="footer-section bg-light py-5">
         <div class="container ">
@@ -441,7 +419,10 @@
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 </body>
+
 </html>

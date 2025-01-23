@@ -2,6 +2,8 @@ let currentCustomSlide = 0;
 
 function showCustomSlide(index) {
     const slides = document.querySelectorAll('.custom-slide');
+    const texts = document.querySelectorAll('.text-overlay h1');
+
     if (index >= slides.length) {
         currentCustomSlide = 0;
     } else if (index < 0) {
@@ -14,6 +16,15 @@ function showCustomSlide(index) {
         slide.classList.remove('active');
         if (i === currentCustomSlide) {
             slide.classList.add('active');
+        }
+    });
+
+    texts.forEach((text, i) => {
+        text.style.animation = '';
+        if (i === currentCustomSlide) {
+            setTimeout(() => {
+                text.style.animation = 'fadeInUp 1.5s forwards';
+            }, 100);
         }
     });
 }
@@ -29,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slides.length > 0) {
         setTimeout(() => {
             slides[0].classList.add('active');
-        }, 100); // Small delay to ensure DOM rendering
+        }, 100);
     }
 
     // Start auto-slide

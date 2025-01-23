@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Press Releases</title>
 
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -17,38 +16,50 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 
-
-
-
-<style>
-        .contact-header {
-            background-color: #1c4295;
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #0d6efd;
             color: white;
+            font-size: 0.85rem;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
-        .office-info {
-            background-color: white;
+        .card-body {
             padding: 20px;
-            border-radius: 8px;
         }
-        .main{
-            background-color: #f8f9fa;
+        .read-more {
+            font-weight: bold;
+            color: #0d6efd;
+            text-decoration: none;
         }
-        .map-container {
-            height: 300px;
-            border-radius: 8px;
-            overflow: hidden;
+        .read-more:hover {
+            text-decoration: underline;
         }
-        .headins {
-            color: #1c4295;
+        .card-footer {
+            background: #f8f9fa;
+            border-top: none;
+            font-size: 0.85rem;
+            color: #6c757d;
         }
-        .container_text{
-            font-size: 20px;
-            font-weight: 600;
+        .bg-custom {
+            background-color: #1c4295;
         }
-       
     </style>
 </head>
-<body class="main">
+<body>
 
     <!-- Header Section -->
     <header>
@@ -89,110 +100,131 @@
     </header>
     
 
-
-    <div class="contact-header py-5 text-center">
-        <h2 class="fw-bold">Contact</h2>
+    
+    <div class="container-fluid  py-5 bg-custom text-white text-center mb-4">
+        <h2 class="fw-bold">Press Releases</h2>
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center mb-0">
+            <ol class="breadcrumb justify-content-center">
                 <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">News</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Press Releases</li>
             </ol>
         </nav>
     </div>
 
-    <!-- Main Contact Section -->
-    <div class="container my-5">
-        <div class="row g-4">
-            <!-- London Office -->
-            <div class="col-md-6">
-                <div class="office-info">
-                    <h3 class="headins fw-bold text-custom mb-4">London</h3>
-                    <p class="container_text" ><strong>UK Office</strong><br>
-                    12-13 Greville Street<br>
-                    London EC1N 8SB</p>
-                    <hr>
-                    <p><strong>Tel:</strong> +44 (0)203 304 6866<br>
-                    <strong>Email:</strong> info@pbbc-uk.com</p>
+<div class="container mt-5">
+    <div class="row gy-4">
+        <div class="col-md-4">
+            <div class="card position-relative">
+                <img src="https://pbbc.uk.com/wp-content/uploads/2023/02/PIMEC_LOGO.jpg" class="card-img-top" alt="Trade Mission to Pakistan">
+                <span class="badge">PRESS RELEASE</span>
+                <div class="card-body">
+                    <h5 class="card-title">Trade Mission to Pakistan</h5>
+                    <p class="card-text">
+                        Pakistan Britain Business Council (“PBBC”) in conjunction with Pakistan High Commission...
+                    </p>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="card-footer">
+                    February 27, 2023 | No Comments
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="map-container">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=12-13%20Greville%20Street,%20London&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        frameborder="0" 
-                        style="width: 100%; height: 100%;">
-                    </iframe>
-                </div>
-            </div>
+        </div>
 
-            <!-- Karachi Office -->
-            <div class="col-md-6">
-                <div class="office-info">
-                    <h3 class="headins fw-bold text-custom mb-4">Pakistan - Karachi Office</h3>
-                    <p class="container_text" ><strong>4-1/H/2 Rimpa Plaza</strong><br>
-                    M.A. Jinnah Road, Karachi</p>
-                    <hr>
-                    <p><strong>Tel:</strong> +92 336 208 4055<br>
-                    <strong>Email:</strong> info@pbbc-uk.com</p>
+        <div class="col-md-4">
+            <div class="card position-relative">
+                <img src="https://pbbc.uk.com/wp-content/uploads/2023/02/PIMEC_LOGO.jpg" class="card-img-top" alt="Trade Mission to Pakistan (PIMEC -23)">
+                <span class="badge">PRESS RELEASE</span>
+                <div class="card-body">
+                    <h5 class="card-title">Trade Mission to Pakistan (PIMEC -23)</h5>
+                    <p class="card-text">
+                        Pakistan Britain Business Council (“PBBC”) in conjunction with Pakistan High...
+                    </p>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="card-footer">
+                    February 1, 2023 | No Comments
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="map-container">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Rimpa%20Plaza,%20Karachi&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        frameborder="0" 
-                        style="width: 100%; height: 100%;">
-                    </iframe>
-                </div>
-            </div>
+        </div>
 
-            <!-- Lahore Office -->
-            <div class="col-md-6">
-                <div class="office-info">
-                    <h3 class="headins fw-bold text-custom mb-4">Pakistan - Lahore Office</h3>
-                    <p class="container_text" ><strong>Office #27, 4th Floor,</strong><br>
-                    Al-Latif Center, Main Boulevard,<br>
-                    Gulberg III, Lahore</p>
-                    <hr>
-                    <p><strong>Email:</strong> info@pbbc-uk.com</p>
+        <div class="col-md-4">
+            <div class="card position-relative">
+                <img src="https://pbbc.uk.com/wp-content/uploads/2023/02/PIMEC_LOGO.jpg" class="card-img-top" alt="Pakistan Land of Opportunities">
+                <span class="badge">PRESS RELEASE</span>
+                <div class="card-body">
+                    <h5 class="card-title">Conference entitled “Pakistan Land of Opportunities”</h5>
+                    <p class="card-text">
+                        Pakistan Britain Business Council (“PBBC”) and Consulate General of Pakistan...
+                    </p>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="card-footer">
+                    January 28, 2022 | No Comments
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="map-container">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Al-Latif%20Center,%20Lahore&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        frameborder="0" 
-                        style="width: 100%; height: 100%;">
-                    </iframe>
-                </div>
-            </div>
+        </div>
 
-            <!-- Islamabad Office -->
-            <div class="col-md-6">
-                <div class="office-info">
-                    <h3 class="headins fw-bold text-custom mb-4">Pakistan - Islamabad Office</h3>
-                    <p class="container_text" ><strong>Office No. 4, Ground Floor</strong><br>
-                    Evacuee Trust Complex, F-5/1, Islamabad</p>
-                    <hr>
-                    <p><strong>Tel:</strong> +92 51 276 6978<br>
-                    <strong>Cell:</strong> +92 324 674 7617<br>
-                    <strong>Email:</strong> info@pbbc-uk.com</p>
+        <div class="col-md-4">
+            <div class="card position-relative">
+                <img src="https://pbbc.uk.com/wp-content/uploads/2023/02/PIMEC_LOGO.jpg" class="card-img-top" alt="Pakistan Land of Opportunities">
+                <span class="badge">PRESS RELEASE</span>
+                <div class="card-body">
+                    <h5 class="card-title">Conference entitled “Pakistan Land of Opportunities”</h5>
+                    <p class="card-text">
+                        Pakistan Britain Business Council (“PBBC”) and Consulate General of Pakistan...
+                    </p>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="card-footer">
+                    January 28, 2022 | No Comments
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="map-container">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Evacuee%20Trust%20Complex,%20Islamabad&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        frameborder="0" 
-                        style="width: 100%; height: 100%;">
-                    </iframe>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card position-relative">
+                <img src="https://pbbc.uk.com/wp-content/uploads/2023/02/PIMEC_LOGO.jpg" class="card-img-top" alt="Pakistan Land of Opportunities">
+                <span class="badge">PRESS RELEASE</span>
+                <div class="card-body">
+                    <h5 class="card-title">Conference entitled “Pakistan Land of Opportunities”</h5>
+                    <p class="card-text">
+                        Pakistan Britain Business Council (“PBBC”) and Consulate General of Pakistan...
+                    </p>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="card-footer">
+                    January 28, 2022 | No Comments
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="card position-relative">
+                <img src="https://pbbc.uk.com/wp-content/uploads/2023/02/PIMEC_LOGO.jpg" class="card-img-top" alt="Pakistan Land of Opportunities">
+                <span class="badge">PRESS RELEASE</span>
+                <div class="card-body">
+                    <h5 class="card-title">Conference entitled “Pakistan Land of Opportunities”</h5>
+                    <p class="card-text">
+                        Pakistan Britain Business Council (“PBBC”) and Consulate General of Pakistan...
+                    </p>
+                    <a href="#" class="read-more">READ MORE</a>
+                </div>
+                <div class="card-footer">
+                    January 28, 2022 | No Comments
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-         <!-- Footer Section -->
-    <footer class="footer-section bg-light py-5">
+<br>
+<br>
+<br>
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-light py-5 ">
         <div class="container ">
             <div class="row align-items-start">
                 <!-- Logo and Social Media -->
@@ -251,9 +283,8 @@
         </div>
     </footer>
 
-  
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
