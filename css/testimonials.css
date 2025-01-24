@@ -1,0 +1,78 @@
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f9f9f9;
+}
+
+.section-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #003366;
+    font-family: Arial, sans-serif;
+}
+
+/* Testimonial Box */
+.testimonial-box {
+    max-width: 600px; /* Smaller width */
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Carousel Controls */
+.custom-control-prev,
+.custom-control-next {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    background: #003366;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.custom-control-prev {
+    left: -50px; /* Adjust for positioning */
+}
+
+.custom-control-next {
+    right: -50px; /* Adjust for positioning */
+}
+
+.custom-control-prev:hover,
+.custom-control-next:hover {
+    background-color: #002244;
+}
+
+.custom-control-prev i,
+.custom-control-next i {
+    font-size: 14px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.carousel-indicators .active {
+    background-color: #003366;
+}
