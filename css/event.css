@@ -1,0 +1,44 @@
+.event-section {
+    /* background: url('background-image.jpg') no-repeat center center/cover; */
+    background-color: #1D3D8E;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+.event-section h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.event-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.event-buttons .btn {
+    margin: 0 10px;
+    border-radius: 25px;
+}
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.countdown-item {
+    text-align: center;
+}
+.countdown-item h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+.countdown-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.registration-ended {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ddd;
+}

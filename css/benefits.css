@@ -39,3 +39,35 @@
     border-radius: 50%;
     opacity: 1;
 }
+
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.carousel .row {
+    justify-content: center;
+}
+
+.carousel img {
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+/* Section Heading */
+.section-heading {
+    font-size: 28px; /* Matches the "Benefits" heading size */
+    font-weight: bold; /* Bold font */
+    color: #003366; /* Dark blue color */
+    text-align: center; /* Center align */
+    margin-bottom: 30px; /* Add space below the heading */
+    font-family: Arial, sans-serif; /* Use a clean font */
+}
