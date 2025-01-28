@@ -1,0 +1,42 @@
+/* Offices Section */
+.offices-section {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7; /* Slightly faded */
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    z-index: 1;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card hr {
+    margin: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.btn-primary {
+    background-color: #1D3D8E;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1D3D8E;
+}
