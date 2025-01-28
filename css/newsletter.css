@@ -1,0 +1,55 @@
+/* Newsletter Section */
+.newsletter-section {
+    background-image: url('https://pbbc.uk.com/wp-content/uploads/2024/05/62f4be_9eb010dd3d4142beab374b2f8e0515femv2-1.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 57, 108, 0.951); /* Dark blue with opacity */
+    z-index: 1;
+}
+
+.newsletter-section .container {
+    z-index: 2;
+    position: relative;
+}
+
+.newsletter-section h2 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.newsletter-section p {
+    font-size: 16px;
+    color: #e0e0e0; /* Light grey text */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-section .form-control {
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+.newsletter-section .btn {
+    border-radius: 30px;
+    background-color: #fff;
+    color: #003366;
+    padding: 10px 20px;
+}
+
+.newsletter-section .btn:hover {
+    background-color: #f1f1f1;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
