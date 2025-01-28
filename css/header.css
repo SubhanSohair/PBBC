@@ -9,16 +9,8 @@
 /* Top Bar */
 .top-bar {
     background-color: #f3f3f3;
-    padding: 8px 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-size: 14px;
     color: #333;
-}
-
-.top-bar .contact-info span {
-    margin-right: 20px;
 }
 
 .top-bar a {
@@ -28,58 +20,61 @@
 
 .top-bar .social-icons a {
     color: #777777;
-    margin-left: 10px;
     font-size: 16px;
 }
 
+.top-bar .social-icons a:hover {
+    color: #0056b3;
+}
+
 /* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
-    background-color: #fff;
+.navbar .navbar-brand img {
+    width: max-content;
+    height: 100px;
+    margin-left: 70px;
 }
 
-.logo img {
-    width: 180px;
-    height: auto;
-    margin-left: 120px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin-top: 20px;
-}
-
-.nav-links li {
-    margin: 0 20px;
-}
-
-.nav-links a {
+.navbar-nav .nav-link {
     text-decoration: none;
     color: #44379b;
     font-size: 15px;
     font-weight: bold;
 }
 
-.nav-links a:hover {
+.navbar-nav .nav-link.active {
     color: #0056b3;
 }
 
-.search-login {
-    display: flex;
-    align-items: center;
-    margin-right: 120px;    
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    color: #333;
+    padding: 8px 15px;
+}
+
+.dropdown-item:hover {
+    background-color: #f3f3f3;
+    color: #0056b3;
 }
 
 .search-icon {
-    margin-right: 20px;
     font-size: 18px;
     color: #333;
     text-decoration: none;
+}
+
+.search-icon:hover {
+    color: #0056b3;
 }
 
 .login {
@@ -88,6 +83,6 @@
     font-size: 15px;
 }
 
-.login:hover, .search-icon:hover {
+.login:hover {
     color: #0056b3;
 }
