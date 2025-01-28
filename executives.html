@@ -65,37 +65,93 @@
     <!-- Header Section -->
     <header>
         <!-- Top Bar -->
-        <div class="top-bar">
-            <div class="contact-info">
-                <span>📞 Hotline +44 (0)203 304 6806</span>
-                <span>✉️ <a href="mailto:info@pbbc.uk.com">info@pbbc.uk.com</a></span>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="top-bar py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="contact-info d-flex">
+                    <span class="me-3">📞 Hotline +44 (0)203 304 6806</span>
+                    <span>✉️ <a href="mailto:info@pbbc.uk.com">info@pbbc.uk.com</a></span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
+
         <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                <img src="/images/PBBC.webp" alt="PBBC Logo">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="/images/PBBC.webp" alt="PBBC Logo" class="logo-img" />
                 </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="events.html">EVENTS</a></li>
-                <li><a href="membership.html">MEMBERSHIP</a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <li><a href="gallery.html">MEDIA GALLERY</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-            <div class="search-login">
-                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="login"><i class="fas fa-user"></i> Login</a>
+
+                <!-- Navigation Links -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ABOUT
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="about.html">OUR JOURNEY</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="executives.html">EXECUTIVES</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">STAKEHOLDERS</a></li>
+                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                <li><a class="dropdown-item" href="#">Partners</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="events.html" id="dropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EVENTS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
+                                <li><a class="dropdown-item" href="#">Past Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">MEMBERSHIP</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="news.html" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                NEWS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="news.html">Press Releases</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">MEDIA GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                    <!-- Search and Login -->
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="search-icon me-3"><i class="fas fa-search"></i></a>
+                        <a href="#" class="login"><i class="fas fa-user"></i> Login</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>

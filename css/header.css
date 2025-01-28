@@ -86,3 +86,16 @@
 .login:hover {
     color: #0056b3;
 }
+
+
+/* Enable hover for dropdown menus on desktop */
+@media (min-width: 992px) {
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Adjust if needed */
+    }
+
+    .navbar-nav .dropdown-toggle::after {
+        transform: rotate(90deg); /* Optional: Rotate caret on hover */
+    }
+}
